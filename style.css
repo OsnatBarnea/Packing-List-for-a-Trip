@@ -1,0 +1,116 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:chocolate;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-image: url(assets/images/backgroundGemini2.png);
+    background-size: 400px;
+ 
+    background-position:right; 
+
+}
+.gridDiv{
+    display: grid;
+    height: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 15% 25% 53% 7%; 
+}
+
+button{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 15px;
+}
+
+
+@font-face {
+    font-family: Leky;
+    src: url(assets/fonts/Leky\ Calgria.otf);
+}
+
+header{
+    grid-column: span 2;
+    font-family: Leky;
+    font-weight: bolder;
+    font-size: 30px;
+    background-color:darkcyan;
+    text-align: center;
+}
+
+main{
+    grid-column: span 2;
+}
+
+.questionsTable{
+    padding-left: 30px;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    font-size: 20px;
+}
+
+.submitButton{
+    align-items: center;
+    margin-left: 20px;
+}
+
+.tableList{
+    margin-left: 300px;
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+td, th{
+    padding: 5px;
+}
+   .trashImg{
+    width: 13px;
+   }
+
+   .hoverList{
+    display: none;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: rgb(255, 255, 255, 0.7);
+   }
+
+   th{
+    font-family: Leky;
+    font-size: 11px;
+    font-weight: bolder;
+   }
+
+   .headerList{
+    padding-top: 30px;
+    text-align: center;
+    font-family: Leky;
+    font-size: 13px;
+    font-weight: bolder;
+   }
+
+   .headerList:hover + .hoverList{
+    display: block;
+   }
+
+   aside{
+    background-image: url(assets/images/back_pack.jpg);
+    background-size: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hand{
+width: 30px;
+padding-top: 25px;
+padding-left: 80px;
+margin: 0;
+}
+
+footer{
+grid-column: span 2;
+text-align: center;
+margin: auto;
+font-size: 15px;
+font-family: Comic Sans MS, Comic Sans, cursive;
+}

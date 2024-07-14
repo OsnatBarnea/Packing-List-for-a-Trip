@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List for a Trip</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/icon_Fly.svg">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body onload="loadList()">
+<div class="gridDiv">
+  
+<header><h4>Packing List for a Trip</h4></header>
+
+<main>
+<table class="questionsTable">
+    <tbody>
+        <tr>
+            <td><label>What equipment do I need?</label></td>
+            <td><input type="text" id="equipmentBox"></td>
+        </tr>
+        <tr>
+            <td><label>How many should I take?</label></td>
+            <td><input type="number" id="amountBox"></td>
+        </tr>
+        <tr>
+            <td><label>Do I need to purchase it?</label></td>
+            <td>
+                <select id="purchaseBox">
+                    <option>select an option...</option>
+                    <option>Yes</option>
+                    <option>No, I have it</option>
+                    <option>No, I can borrow from a friend</option>
+                </select>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<button onclick="submit()" class="submitButton" id="subButton">save task</button><span>&nbsp;&nbsp;</span>
+<button onclick="clear()">clear</button>
+<br>
+<img class="hand" src="assets/images/pointingHand.svg" alt="pointing hand">
+</main>
+
+<aside>
+    <h4 class="headerList">Basic equipment list...</h4>
+    <ul class="hoverList">
+        <li>Passport/Visa/ID</li>
+        <li>ATM cards and cash</li>
+        <li>Clothes</li>
+        <li>Toothbrush and toothpaste</li>
+        <li>Soap and Shampoo</li>
+        <li>Sunscreen</li>
+        <li>Medications and First-Aid ointment</li>
+        <li>Cell phone and Charger</li>
+        <li>Camera</li>
+        <li>Plug adapter</li>
+        <li>Passport</li>
+        <li>Books</li>
+    </ul>
+</aside>
+
+
+<div id="container"></div>
+
+<footer>Note: You can edit the list by clicking on the value<br>
+    This site was made by O. Barnea (images by Gemini Google)</footer>
+</div>  
+</body>
+</html>
