@@ -20,9 +20,6 @@ document.getElementById('purchaseBox').selectedIndex = 0;
 });
 
 
-
-
-
 //array to get the user's list 
 let equipmentList = [];
 
@@ -45,7 +42,7 @@ function submit(){
     
 
     const oneEquipment = {equipment: equipmentBox.value, 
-                            amount: +amountBox.value, 
+                            amount: amountBox.value, 
                             purchase:purchaseBox.value};
 
     equipmentList.push(oneEquipment);
@@ -77,12 +74,14 @@ function validation(){
     if (!amountBox.value){
         alert("Please enter the amount needed");
         amountBox.focus();
+        amountBox.value = "";
         amountBox.style.backgroundColor = "#FFD4C6";
         return false;
     }
-    if (amountBox.value<=0){
+    if (amountBox.value <= 0){
         alert("Please enter a positive number");
         amountBox.focus();
+        amountBox.value = "";
         amountBox.style.backgroundColor = "#FFD4C6";
         return false;
     }
@@ -96,7 +95,9 @@ function validation(){
 //present the list in table:
 function addToTableList(equipmentList){
 
-    if(equipmentList.length === 0) return;
+    if(equipmentList.length === 0) {
+        container.innerHTML = "";
+        return;}
 
    let html = `<table class="tableList">
                     <thead>
