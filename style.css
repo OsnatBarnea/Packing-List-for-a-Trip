@@ -175,6 +175,9 @@ footer {
         background-position-x: 20px;
         background-position-y: 400px;
     }
+    header{
+        font-size: 25px;
+    }
     .questionsTable {
         padding-top: 15px;
         font-size: 15px;
