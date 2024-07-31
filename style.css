@@ -20,7 +20,6 @@ body, html {
 }
 
 button {
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 17px;
     cursor: pointer;
 }
@@ -50,7 +49,6 @@ main {
 
 .questionsTable {
     padding-left: 20px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     font-size: 20px;
 }
 
@@ -62,7 +60,6 @@ main {
 .tableList {
     margin-left: 0vw;
     text-align: center;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     background-color: rgb(255, 255, 255, 0.7);
 }
 
@@ -88,13 +85,11 @@ td, th {
 .hoverList {
     display: none;
     font-size: 15px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
     background-color: rgb(255, 255, 255, 0.8);
 }
 
 th {
-    font-family: Leky;
-    font-size: 11px;
+    font-size: 20px;
     font-weight: bolder;
 }
 
@@ -128,7 +123,6 @@ footer {
     text-align: center;
     margin: auto;
     font-size: 13px;
-    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
 .container {
@@ -164,9 +158,18 @@ footer {
         grid-column: span 3;
     }
 
-    header{
-        font-size: 27px;
+    input, select{
+        width: 100px;
     }
+
+    header{
+        font-size: 25px;
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 5px;
+            background: linear-gradient(to bottom, darkcyan 90%, chocolate 10%);
+     }
+    
     .questionsTable {
         padding-top: 15px;
         font-size: 18px;
