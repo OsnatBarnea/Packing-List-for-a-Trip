@@ -21,7 +21,6 @@ document.getElementById('subButton').addEventListener('click', function () {
     document.getElementById('purchaseBox').selectedIndex = 0;
 });
 
-
 //array to get the user's list 
 let equipmentList = [];
 
@@ -38,9 +37,7 @@ function loadList() {
 
 //add data from the user
 function submit() {
-
     if (!validation()) return;
-
 
     const oneEquipment = {
         equipment: equipmentBox.value,
@@ -52,17 +49,18 @@ function submit() {
 
     addToTableList(equipmentList);
 
-    // equipmentBox.value = amountBox.value = purchaseBox.value = "";
-    equipmentBox.focus();
-    clear();
-    saveList();
-}
-
-function clear() {
     equipmentBox.value = amountBox.value = "";
     purchaseBox.value = "select";
     equipmentBox.focus();
+    saveList();
 }
+
+const clearBtn = document.getElementById("clearBtn");
+clearBtn.addEventListener("click", () => {
+    equipmentBox.value = amountBox.value = "";
+    purchaseBox.value = "select";
+    equipmentBox.focus();
+})
 
 //missing items:
 function validation() {
@@ -117,7 +115,9 @@ function addToTableList(equipmentList) {
                     <td contentEditable>${equipmentList[i].equipment}</td>
                     <td contentEditable>${equipmentList[i].amount}</td>
                     <td contentEditable>${equipmentList[i].purchase}</td>
-                    <td><button onclick="deleteItem(${i})" class="deleteButton"><img src="assets/images/trash.svg" class="trashImg" alt="delete"></button></td>
+                    <td>
+                        <button onclick="deleteItem(${i})" class="deleteButton"><img src="assets/images/trash.svg" class="trashImg" alt="delete"></button>
+                    </td>
                  </tr>`;
     }
     html += `</tbody></table>`;

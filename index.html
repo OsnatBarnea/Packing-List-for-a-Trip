@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script defer src="main.js"></script>
 </head>
+
 <body onload="loadList()">
 <div class="gridDiv">
   
@@ -40,13 +41,13 @@
 
 <br>
 <button onclick="submit()" class="submitButton" id="subButton">save task</button><span>&nbsp;&nbsp;</span>
-<button onclick="clear()">clear</button>
+<button id="clearBtn">clear</button>
 <br>
 <img class="hand" src="assets/images/pointingHand.svg" alt="pointing hand">
 </main>
 
 <aside>
-    <h4 class="headerList">Basic equipment list...</h4>
+    <h4 class="headerList">Basic list...</h4>
     <ul class="hoverList">
         <li>Passport/Visa/ID</li>
         <li>ATM cards and cash</li>
@@ -62,7 +63,6 @@
         <li>Books</li>
     </ul>
 </aside>
-
 
 <div id="container"></div>
 
