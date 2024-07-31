@@ -49,18 +49,22 @@ function submit() {
 
     addToTableList(equipmentList);
 
-    equipmentBox.value = amountBox.value = "";
-    purchaseBox.value = "select";
-    equipmentBox.focus();
+    clearForm();
     saveList();
 }
 
 const clearBtn = document.getElementById("clearBtn");
 clearBtn.addEventListener("click", () => {
-    equipmentBox.value = amountBox.value = "";
+    clearForm();
+})
+
+// Clear form fields
+function clearForm() {
+    equipmentBox.value = "";
+    amountBox.value = "";
     purchaseBox.value = "select";
     equipmentBox.focus();
-})
+}
 
 //missing items:
 function validation() {

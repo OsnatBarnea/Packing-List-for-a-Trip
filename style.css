@@ -22,6 +22,7 @@ body, html {
 button {
     font-size: 17px;
     cursor: pointer;
+    z-index: 10;
 }
 
 button:hover {
@@ -71,8 +72,8 @@ main {
 }
 
 #container::-webkit-scrollbar {
-     display: none; 
-} 
+    display: none;
+}
 
 td, th {
     padding: 5px;
@@ -141,48 +142,56 @@ footer {
     grid-template-columns: 1fr auto;
 }
 
-.equipment, .amount, .purchase {
+.equipment,
+.amount,
+.purchase {
     margin-bottom: 10px;
 }
 
 /* Media query for even smaller screens */
 @media screen and (max-width: 768px) {
-    body{
-       height: auto;
-       overflow: auto;
+    body {
+        height: auto;
+        overflow: auto;
         background-size: 250px;
         background-position-x: 20px;
         background-position-y: 350px;
     }
+
     main {
         grid-column: span 3;
     }
 
-    input, select{
+    input,
+    select {
         width: 100px;
     }
 
-    header{
-        font-size: 25px;
-            font-size: 30px;
-            text-align: center;
-            margin-bottom: 5px;
-            background: linear-gradient(to bottom, darkcyan 90%, chocolate 10%);
-     }
-    
+    header {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 5px;
+        background: linear-gradient(to bottom, darkcyan 90%, chocolate 10%);
+    }
+
     .questionsTable {
         padding-top: 15px;
         font-size: 18px;
     }
 
     button {
-        margin-bottom:  10px;
+        margin-bottom: 10px;
     }
-    .tableList{
+
+    .tableList {
         margin-top: 50px;
     }
 
-    .headerList, .hand {
+    select {
+        direction: ltr;
+    }
+
+    .headerList,.hand {
         display: none;
     }
 
@@ -190,8 +199,8 @@ footer {
         background-image: none;
     }
 
-    footer{
-        margin-top: 7px;
+    footer {
+        margin-top: 110px;
         font-size: 12px;
     }
 }
