@@ -7,8 +7,12 @@ const purchaseBox = document.getElementById('purchaseBox');
 const container = document.getElementById("container");
 
 //for the mobile
-document.getElementById('subButton').addEventListener('touchstart', submit);
-document.getElementById('clearBtn').addEventListener('touchstart', clearForm);
+document.getElementById('subButton').addEventListener('touchstart', function() {
+    submit();
+});
+document.getElementById('clearBtn').addEventListener('touchstart', function(){
+ clearForm()
+});
 
 equipmentBox.focus();
 
@@ -23,6 +27,7 @@ amountBox.addEventListener(`input`, function () {
 
 document.getElementById('subButton').addEventListener('click', function () {
     document.getElementById('purchaseBox').selectedIndex = 0;
+    submit();
 });
 
 //array to get the user's list 
@@ -64,8 +69,7 @@ clearBtn.addEventListener("click", () => {
 
 // Clear form fields
 function clearForm() {
-    equipmentBox.value = "";
-    amountBox.value = "";
+    equipmentBox.value = amountBox.value = "";
     purchaseBox.value = "select";
     equipmentBox.focus();
 }

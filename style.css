@@ -156,36 +156,29 @@ footer {
         background-position-y: 300px;
     }
 
-    /* main {
+    main {
         grid-column: span 3;
-    } */
+    }
 
     input, select {
         width: 100px;
     }
 
     header {
-        font-size: 22px;
+        font-size: 24px;
         text-align: center;
         margin-bottom: 15px;
-        background: linear-gradient(to bottom, darkcyan 95%, chocolate 5%);
+        background: linear-gradient(to bottom, darkcyan 90%, chocolate 10%);
     }
 
     .questionsTable {
-        padding-top: 15px;
+        padding-top: 14px;
         font-size: 16px;
-    }
-
-    button {
         margin-bottom: 40px;
     }
 
     .tableList {
-        margin-top: 90px;
-    }
-
-    select {
-        direction: ltr;
+        margin-top: 80px;
     }
 
     .headerList,.hand {
