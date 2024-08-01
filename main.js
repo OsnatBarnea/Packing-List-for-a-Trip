@@ -7,12 +7,8 @@ const purchaseBox = document.getElementById('purchaseBox');
 const container = document.getElementById("container");
 
 //for the mobile
-document.getElementById('subButton').addEventListener('touchstart', function() {
-    submit();
-});
-document.getElementById('clearBtn').addEventListener('touchstart', function(){
- clearForm()
-});
+document.getElementById('subButton').addEventListener('touchstart', submit);
+document.getElementById('clearBtn').addEventListener('touchstart', clearForm);
 
 equipmentBox.focus();
 

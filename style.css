@@ -171,10 +171,17 @@ footer {
         background: linear-gradient(to bottom, darkcyan 90%, chocolate 10%);
     }
 
+    th {
+        font-size: 17px;
+    }
+
     .questionsTable {
-        padding-top: 14px;
         font-size: 16px;
-        margin-bottom: 40px;
+    }
+
+    button {
+        z-index: 10;
+        margin: 20px;
     }
 
     .tableList {
@@ -190,7 +197,7 @@ footer {
     }
 
     footer {
-        margin-top: 20px;
-        font-size: 12px;
+        margin-top: 50px;
+        font-size: 13px;
     }
 }
