@@ -142,9 +142,7 @@ footer {
     grid-template-columns: 1fr auto;
 }
 
-.equipment,
-.amount,
-.purchase {
+.equipment, .amount,.purchase {
     margin-bottom: 10px;
 }
 
@@ -153,25 +151,24 @@ footer {
     body {
         height: auto;
         overflow: auto;
-        background-size: 250px;
+        background-size: 200px;
         background-position-x: 20px;
-        background-position-y: 350px;
+        background-position-y: 300px;
     }
 
-    main {
+    /* main {
         grid-column: span 3;
-    }
+    } */
 
-    input,
-    select {
+    input, select {
         width: 100px;
     }
 
     header {
         font-size: 22px;
         text-align: center;
-        margin-bottom: 5px;
-        background: linear-gradient(to bottom, darkcyan 90%, chocolate 10%);
+        margin-bottom: 15px;
+        background: linear-gradient(to bottom, darkcyan 95%, chocolate 5%);
     }
 
     .questionsTable {
@@ -200,7 +197,7 @@ footer {
     }
 
     footer {
-        margin-top: 110px;
+        margin-top: 350px;
         font-size: 12px;
     }
 }

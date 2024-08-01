@@ -6,6 +6,10 @@ const amountBox = document.getElementById("amountBox");
 const purchaseBox = document.getElementById('purchaseBox');
 const container = document.getElementById("container");
 
+//for the mobile
+document.getElementById('subButton').addEventListener('touchstart', submit);
+document.getElementById('clearBtn').addEventListener('touchstart', clearForm);
+
 equipmentBox.focus();
 
 ////when user type's the background color is default (even if validation was applied)
