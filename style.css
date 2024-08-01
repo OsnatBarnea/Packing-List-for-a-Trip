@@ -76,7 +76,8 @@ main {
 }
 
 td, th {
-    padding: 5px;
+    text-align: center;
+    padding: 7px;
 }
 
 .trashImg {
